@@ -1,0 +1,14 @@
+# Default connection url: postgres://postgres:DQhHLe4Z!p45FZYgTyXk@localhost:5432/postgres
+
+services:
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: DQhHLe4Z!p45FZYgTyXk
+    volumes:
+      - data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+volumes:
+  data: ~
