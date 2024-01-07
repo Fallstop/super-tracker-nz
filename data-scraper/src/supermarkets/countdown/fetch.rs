@@ -10,7 +10,6 @@ const PRODUCT_API_URL: &str = "https://www.countdown.co.nz/api/v1/products";
 struct ApiResponseRoot {
     products: ApiResponseItems,
     isSuccessful: bool,
-    region: String,
 }
 
 #[derive(Deserialize, Debug, Clone)]
@@ -119,25 +118,25 @@ pub async fn fetch_countdown_data() -> Result<Vec<ApiResponseItem>, Box<dyn std:
     let api_client = reqwest::ClientBuilder::new()
         .default_headers(headers)
         .connect_timeout(Duration::from_secs(5))
-        .timeout(Duration::from_secs(64))
+        .timeout(Duration::from_secs(10))
         .build()?;
 
-    // let response = api_client.execute(
-    //     api_client
-    //         .get(PRODUCT_API_URL)
-    //         .query(&[
-    //             ("target", "browse"),
-    //             ("inStockProductsOnly", "false"),
-    //             ("page", "1"),
-    //             ("size", "10000")
-    //         ])
-    //         .build()?
-    // ).await?;
+    let response = api_client.execute(
+        api_client
+            .get(PRODUCT_API_URL)
+            .query(&[
+                ("target", "browse"),
+                ("inStockProductsOnly", "false"),
+                ("page", "1"),
+                ("size", "10")
+            ])
+            .build()?
+    ).await?;
 
-    // let api_response = response.json::<ApiResponseRoot>().await?;
+    let api_response = response.json::<ApiResponseRoot>().await?;
 
-    let response = fs::read_to_string("./countdown.json")?;
-    let api_response = serde_json::from_str::<ApiResponseRoot>(&response)?;
+    // let response = fs::read_to_string("./countdown.json")?;
+    // let api_response = serde_json::from_str::<ApiResponseRoot>(&response)?;
 
 
 

@@ -4,7 +4,7 @@ pub mod countdown;
 
 
 pub async fn super_fetch(db: &mut DatabaseConnection) -> Result<(), Box<dyn std::error::Error + Send + Sync>> {
-    countdown::fetch().await?;
+    countdown::fetch(db).await?;
 
     Ok(())
 }
