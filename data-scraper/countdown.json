@@ -1,0 +1,444 @@
+{
+	"products": {
+		"items": [
+			{
+				"type": "Product",
+				"name": "fresh fruit bananas yellow",
+				"barcode": "9354829000064",
+				"variety": "yellow",
+				"brand": "fresh fruit",
+				"slug": "fresh-fruit-bananas-yellow",
+				"sku": "133211",
+				"unit": "Kg",
+				"selectedPurchasingUnit": null,
+				"price": {
+					"originalPrice": 3.4500,
+					"salePrice": 3.4500,
+					"savePrice": 0.00,
+					"savePercentage": 0.0,
+					"canShowSavings": true,
+					"hasBonusPoints": false,
+					"isClubPrice": false,
+					"isSpecial": false,
+					"isNew": false,
+					"canShowOriginalPrice": true,
+					"discount": null,
+					"total": null,
+					"isTargetedOffer": false,
+					"averagePricePerSingleUnit": 0.86,
+					"isBoostOffer": false,
+					"purchasingUnitPrice": null,
+					"orderedPrice": null,
+					"isUsingOrderedPrice": false,
+					"currentPricingMatchesOrderedPricing": null,
+					"extendedListPrice": null,
+					"originalAveragePricePerSingleUnit": null
+				},
+				"images": {
+					"small": "https://assets.woolworths.com.au/images/2010/133211.jpg?impolicy=wowcdxwbjbx&w=65&h=65",
+					"big": "https://assets.woolworths.com.au/images/2010/133211.jpg?impolicy=wowcdxwbjbx&w=200&h=200"
+				},
+				"quantity": {
+					"min": 0.200,
+					"max": 100.0,
+					"increment": 0.200,
+					"value": null,
+					"quantityInOrder": null,
+					"purchasingQuantityString": null
+				},
+				"stockLevel": 3,
+				"eachUnitQuantity": null,
+				"averageWeightPerUnit": 0.25000,
+				"size": {
+					"cupPrice": 0.3500,
+					"cupMeasure": "100g",
+					"packageType": "loose",
+					"volumeSize": "per kg"
+				},
+				"hasShopperNotes": null,
+				"productTag": null,
+				"departments": [
+					{
+						"id": 1,
+						"name": "Fruit & Veg"
+					}
+				],
+				"subsAllowed": false,
+				"supportsBothEachAndKgPricing": true,
+				"adId": null,
+				"brandSuggestionId": null,
+				"brandSuggestionName": null,
+				"priceUnitLabel": null,
+				"availabilityStatus": "In Stock",
+				"onlineSample": null,
+				"onlineSampleRealProductMapId": 0
+			}
+		],
+		"totalItems": 10000
+	},
+	"dasFacets": [
+		{
+			"key": "Department",
+			"value": "1",
+			"isBooleanValue": false,
+			"name": "Fruit & Veg",
+			"productCount": 757,
+			"shelfResponses": null,
+			"group": "Department"
+		},
+		{
+			"key": "Department",
+			"value": "2",
+			"isBooleanValue": false,
+			"name": "Meat & Poultry",
+			"productCount": 768,
+			"shelfResponses": null,
+			"group": "Department"
+		},
+		{
+			"key": "Department",
+			"value": "3",
+			"isBooleanValue": false,
+			"name": "Fish & Seafood",
+			"productCount": 93,
+			"shelfResponses": null,
+			"group": "Department"
+		},
+		{
+			"key": "Department",
+			"value": "4",
+			"isBooleanValue": false,
+			"name": "Fridge & Deli",
+			"productCount": 2212,
+			"shelfResponses": null,
+			"group": "Department"
+		},
+		{
+			"key": "Department",
+			"value": "5",
+			"isBooleanValue": false,
+			"name": "Bakery",
+			"productCount": 711,
+			"shelfResponses": null,
+			"group": "Department"
+		},
+		{
+			"key": "Department",
+			"value": "6",
+			"isBooleanValue": false,
+			"name": "Frozen",
+			"productCount": 1130,
+			"shelfResponses": null,
+			"group": "Department"
+		},
+		{
+			"key": "Department",
+			"value": "7",
+			"isBooleanValue": false,
+			"name": "Pantry",
+			"productCount": 6335,
+			"shelfResponses": null,
+			"group": "Department"
+		},
+		{
+			"key": "Department",
+			"value": "8",
+			"isBooleanValue": false,
+			"name": "Beer & Wine",
+			"productCount": 1666,
+			"shelfResponses": null,
+			"group": "Department"
+		},
+		{
+			"key": "Department",
+			"value": "9",
+			"isBooleanValue": false,
+			"name": "Drinks",
+			"productCount": 1734,
+			"shelfResponses": null,
+			"group": "Department"
+		},
+		{
+			"key": "Department",
+			"value": "10",
+			"isBooleanValue": false,
+			"name": "Health & Body",
+			"productCount": 3907,
+			"shelfResponses": null,
+			"group": "Department"
+		},
+		{
+			"key": "Department",
+			"value": "11",
+			"isBooleanValue": false,
+			"name": "Household",
+			"productCount": 2788,
+			"shelfResponses": null,
+			"group": "Department"
+		},
+		{
+			"key": "Department",
+			"value": "12",
+			"isBooleanValue": false,
+			"name": "Baby & Child",
+			"productCount": 667,
+			"shelfResponses": null,
+			"group": "Department"
+		},
+		{
+			"key": "Department",
+			"value": "13",
+			"isBooleanValue": false,
+			"name": "Pet",
+			"productCount": 596,
+			"shelfResponses": null,
+			"group": "Department"
+		}
+	],
+	"facets": [
+		{
+			"key": "All",
+			"value": "All",
+			"isBooleanValue": true,
+			"name": "All",
+			"productCount": 6126,
+			"shelfResponses": null,
+			"group": "Specials & Great Prices"
+		},
+		{
+			"key": "Special",
+			"value": "Special",
+			"isBooleanValue": true,
+			"name": "Special",
+			"productCount": 4153,
+			"shelfResponses": null,
+			"group": "Specials & Great Prices"
+		},
+		{
+			"key": "Great Price",
+			"value": "Great Price",
+			"isBooleanValue": true,
+			"name": "Great Price",
+			"productCount": 1973,
+			"shelfResponses": null,
+			"group": "Specials & Great Prices"
+		},
+		{
+			"key": "Onecard Club",
+			"value": "Onecard Club",
+			"isBooleanValue": true,
+			"name": "Onecard Club",
+			"productCount": 1750,
+			"shelfResponses": null,
+			"group": "Specials & Great Prices"
+		},
+		{
+			"key": "PiesAttributes",
+			"value": "Dairy Free",
+			"isBooleanValue": false,
+			"name": "Dairy Free",
+			"productCount": 3654,
+			"shelfResponses": null,
+			"group": "Dietary & Lifestyle"
+		},
+		{
+			"key": "PiesAttributes",
+			"value": "Gluten Free",
+			"isBooleanValue": false,
+			"name": "Gluten Free",
+			"productCount": 4158,
+			"shelfResponses": null,
+			"group": "Dietary & Lifestyle"
+		},
+		{
+			"key": "PiesAttributes",
+			"value": "Low Salt",
+			"isBooleanValue": false,
+			"name": "Low Salt",
+			"productCount": 2636,
+			"shelfResponses": null,
+			"group": "Dietary & Lifestyle"
+		},
+		{
+			"key": "PiesAttributes",
+			"value": "Low Sugar",
+			"isBooleanValue": false,
+			"name": "Low Sugar",
+			"productCount": 3404,
+			"shelfResponses": null,
+			"group": "Dietary & Lifestyle"
+		},
+		{
+			"key": "PiesAttributes",
+			"value": "Organic",
+			"isBooleanValue": false,
+			"name": "Organic",
+			"productCount": 352,
+			"shelfResponses": null,
+			"group": "Dietary & Lifestyle"
+		},
+		{
+			"key": "PiesAttributes",
+			"value": "Vegan",
+			"isBooleanValue": false,
+			"name": "Vegan",
+			"productCount": 2687,
+			"shelfResponses": null,
+			"group": "Dietary & Lifestyle"
+		},
+		{
+			"key": "PiesAttributes",
+			"value": "Vegetarian",
+			"isBooleanValue": false,
+			"name": "Vegetarian",
+			"productCount": 3815,
+			"shelfResponses": null,
+			"group": "Dietary & Lifestyle"
+		}
+	],
+	"sortOptions": [
+		{
+			"value": "PriceAsc",
+			"text": "Price Low to High",
+			"selected": false
+		},
+		{
+			"value": "PriceDesc",
+			"text": "Price High to Low",
+			"selected": false
+		},
+		{
+			"value": "CUPAsc",
+			"text": "Unit Price Low to High",
+			"selected": false
+		},
+		{
+			"value": "BrowseRelevance",
+			"text": "Relevance",
+			"selected": true
+		}
+	],
+	"currentPageSize": 1,
+	"currentSortOption": "BrowseRelevance",
+	"brandSuggestions": null,
+	"breadcrumb": {
+		"department": null,
+		"aisle": null,
+		"shelf": null,
+		"productGroup": null,
+		"dynamicGroup": null
+	},
+	"partialFailures": {
+		"shopperNotesFetchFailed": null,
+		"maxSupplyLimitFetchFailed": null,
+		"purchaseUnitFetchFailed": null,
+		"trolleyQuantityUpdateFailed": null,
+		"productTagFetchFailed": null,
+		"breadcrumbGenerationFailed": true,
+		"productGroupFetchFailed": null,
+		"targetOfferFetchFailed": null
+	},
+	"targetedOfferDetails": null,
+	"action": null,
+	"isSuccessful": true,
+	"rootUrl": "http://shop.countdown.co.nz",
+	"context": {
+		"shopper": {
+			"firstName": null,
+			"isShopper": false,
+			"isLoggedIn": false,
+			"hasOnecard": false,
+			"oneCardBalance": null,
+			"shopperIdHash": null,
+			"shopperScvId": "",
+			"sessionGroups": null,
+			"orderCount": null,
+			"isSupplyLimitOverrideShopper": false,
+			"isPriorityShopper": false,
+			"isChangingOrder": false,
+			"changingOrderId": null,
+			"hasActiveDeliverySubscription": false
+		},
+		"fulfilment": {
+			"address": "Glenfield",
+			"selectedDate": null,
+			"selectedDateWithTZInfo": null,
+			"startTime": null,
+			"endTime": null,
+			"method": "Courier",
+			"cutOffTime": null,
+			"isSlotToday": false,
+			"isAddressInDeliveryZone": true,
+			"isDefaultDeliveryAddress": false,
+			"areaId": 77,
+			"suburbId": 0,
+			"pickupAddressId": 0,
+			"fulfilmentStoreId": 9443,
+			"perishableCode": "P",
+			"locker": null,
+			"expressFulfilment": {
+				"isExpressSlot": false,
+				"expressPickUpFee": null,
+				"expressDeliveryFee": null
+			}
+		},
+		"enabledFeatures": [
+			"HaveYouForgotten",
+			"ProjectShore",
+			"ManagedServiceBar",
+			"RecipesAddToTrolley",
+			"SavedRecipes",
+			"ProductStraps",
+			"DeliverySubscriptionSignUp",
+			"FirstTimeShopper",
+			"OrderConfirmation",
+			"NewDeliverySubscriptionPage",
+			"CancelOrder",
+			"CountryOfOriginInAccordion",
+			"PiesEnableEachUnitForKgProducts",
+			"ForgotPassword",
+			"JQueryDeprecationLogging",
+			"PaperPackingSlipPreference",
+			"EnableDeliverySaverRetryPayment",
+			"RecipesInApp",
+			"DeliverySaverBannerOnTrolleyPage",
+			"RecipeCategorySeo",
+			"EnableBoostsLandingPage",
+			"CustomerSelfService",
+			"MerchantHostedLocalStorefront",
+			"AccountMenuMyOrdersLink",
+			"HideTargetedCategoryOffersBanner",
+			"TargetedCategoryOffers",
+			"LazyLoadProductStampImages",
+			"OptimizelyWeb",
+			"ChangeOrderAccountMenu",
+			"ChangeOrderPromptHomepage",
+			"ChangeOrder",
+			"ChangeOrderIndicateChangedPriceInProductList",
+			"SwitchToggleToShowInStockItemsOnly",
+			"HideSwitchToggleForOOS",
+			"ExpressDelivery",
+			"ExpressPickup",
+			"Optimizely",
+			"PromotionTilesInBrowseMegaMenu",
+			"NewOrderConfirmationPage",
+			"StickyCTAReviewOrder",
+			"ViewOrderConfirmationLinkOnMyOrders",
+			"ChangeOrderChangedPriceTutorial",
+			"OnlineSamplesCheckoutJourney",
+			"OnlineSampleOrderConfirmation",
+			"ShowDiscountPercentage",
+			"GreatToLowPrice",
+			"OnlineSampleRemarketing",
+			"DynamicPromoTilesInBrowseMegaMenu",
+			"EnableDeviceFingerprinting",
+			"ChangeOrderChangedPriceTutorialMobileWeb",
+			"SameDayDelivery",
+			"LowPriceProductStrap"
+		],
+		"shoppingListItems": [],
+		"basketTotals": null,
+		"advancedSettingsResponse": null
+	},
+	"messages": null
+}
