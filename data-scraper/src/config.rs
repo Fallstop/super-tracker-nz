@@ -4,6 +4,9 @@ use chrono::NaiveTime;
 use log::info;
 use once_cell::sync::Lazy;
 
+
+pub static MAX_PRODUCT_SCRAPE: usize = 300;
+
 pub struct EnvConfig {
     pub db_connection_uri: String,
 }
