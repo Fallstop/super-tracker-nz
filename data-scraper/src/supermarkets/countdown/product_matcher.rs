@@ -2,25 +2,28 @@ use std::{collections::HashMap, cmp};
 
 use log::info;
 use sea_orm::{Set,NotSet, ActiveModelTrait};
+use tokio::time::Instant;
 use url::Url;
 
 use crate::db::entities::product_db;
 
-use super::fetch::ApiResponseItem;
+use super::api_response::ApiProduct;
 
 pub async fn match_products(
-    store_products: &Vec<ApiResponseItem>,
+    store_products: &Vec<ApiProduct>,
     db_products: &mut Vec<product_db::ActiveModel>,
     db: &mut sea_orm::DatabaseConnection,
 ) -> Result<Vec<i32>, Box<dyn std::error::Error + Send + Sync>> {
 
-    info!("Matching Products! {}/{}", store_products.len(), db_products.len());
+    info!("Matching Products! {}/{}", store_products.len(), db_products.len(),);
+    let start_time = Instant::now();
 
     let mut novel_products: usize = 0;
 
     let mut matched_product_ids = Vec::new();
 
     for store_product in store_products.clone() {
+
         // Check valid price
         let store_price = get_price(&store_product);
         if store_price == 0.0 {
@@ -65,7 +68,7 @@ pub async fn match_products(
         db_products.push(db_entry);
     }
 
-    info!("Matched {} products!", matched_product_ids.len());
+    info!("Matched {} products, in {}s!", matched_product_ids.len(), start_time.elapsed().as_millis() as f64 / 1000.0);
     info!("Created {} new products!", novel_products);
 
     Ok(matched_product_ids)
@@ -85,7 +88,7 @@ fn get_large_image(src: &str) -> String {
 
 
 
-fn parse_size_unit(store_product: &ApiResponseItem, store_price: f32) -> (Option<f32>, i32, Option<String>) {
+fn parse_size_unit(store_product: &ApiProduct, store_price: f32) -> (Option<f32>, i32, Option<String>) {
     let mut size= None;
     let mut unit = None;
     let mut quantity = 1;
@@ -162,6 +165,6 @@ fn parse_unit(str: &str) -> (f32, String) {
     (size, parsed_unit)
 }
 
-pub fn get_price(store_product: &ApiResponseItem) -> f32 {
+pub fn get_price(store_product: &ApiProduct) -> f32 {
     store_product.price.salePrice.unwrap_or(store_product.price.originalPrice.unwrap_or(0.0))
 }

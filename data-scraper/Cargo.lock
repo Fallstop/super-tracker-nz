@@ -712,6 +712,7 @@ dependencies = [
  "once_cell",
  "pretty_flexible_env_logger",
  "rand",
+ "regex",
  "reqwest",
  "sea-orm",
  "serde",

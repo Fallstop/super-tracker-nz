@@ -9,6 +9,7 @@ use self::product_matcher::get_price;
 
 mod fetch;
 mod product_matcher;
+mod api_response;
 
 pub async fn fetch(
     db: &mut DatabaseConnection,
