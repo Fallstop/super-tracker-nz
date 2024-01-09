@@ -16,9 +16,19 @@ pub struct Model {
     pub size: Option<f32>,
     pub unit: Option<String>,
     pub quantity: i32,
+    pub first_index_timestamp: DateTime,
 }
 
 #[derive(Copy, Clone, Debug, EnumIter, DeriveRelation)]
-pub enum Relation {}
+pub enum Relation {
+    #[sea_orm(has_many = "super::supermarket_price::Entity")]
+    SupermarketPrice,
+}
+
+impl Related<super::supermarket_price::Entity> for Entity {
+    fn to() -> RelationDef {
+        Relation::SupermarketPrice.def()
+    }
+}
 
 impl ActiveModelBehavior for ActiveModel {}

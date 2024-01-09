@@ -5,7 +5,9 @@ use log::info;
 use once_cell::sync::Lazy;
 
 
-pub static MAX_PRODUCT_SCRAPE: usize = 300;
+pub static MAX_PRODUCT_SCRAPE: usize = 300000;
+
+pub static DATA_OUT_DIR: &str = "dataout_tmp";
 
 pub struct EnvConfig {
     pub db_connection_uri: String,

@@ -7,4 +7,4 @@ pub use supermarkets::*;
 pub mod products;
 pub use products::*;
 
-mod entities;
+pub mod entities;

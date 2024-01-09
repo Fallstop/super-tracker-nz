@@ -88,6 +88,12 @@ impl MigrationTrait for Migration {
                             .integer()
                             .not_null()
                     )
+                    .col(
+                        ColumnDef::new(ProductDB::FirstIndexTimestamp)
+                            .date_time()
+                            .default(Expr::current_timestamp())
+                            .not_null()
+                    )
                     .to_owned()
             ).await?;
 
@@ -106,21 +112,33 @@ impl MigrationTrait for Migration {
                     .col(
                         ColumnDef::new(SupermarketPrice::Timestamp)
                             .date_time()
+                            .default(Expr::current_timestamp())
                             .not_null(),
                     )
                     .col(
-                        ColumnDef::new(SupermarketPrice::Supermarket)
+                        ColumnDef::new(SupermarketPrice::SupermarketID)
                             .integer()
                             .not_null(),
                     )
                     .foreign_key(
                         ForeignKeyCreateStatement::new()
-                            .name("FK_SupermarketPrice_SongsPlayed")
+                            .name("FK_SupermarketPrice_SupermarketId")
                             .from(
                                 SupermarketPrice::SupermarketPrice,
-                                SupermarketPrice::Supermarket,
+                                SupermarketPrice::SupermarketID,
                             )
                             .to(Supermarkets::Supermarkets, Supermarkets::SupermarketId),
+                    )
+                    .col(
+                        ColumnDef::new(SupermarketPrice::ProductID)
+                            .integer()
+                            .not_null(),
+                    )
+                    .foreign_key(
+                        ForeignKeyCreateStatement::new()
+                            .name("FK_SupermarketPrice_ProductId")
+                            .from(SupermarketPrice::SupermarketPrice, SupermarketPrice::ProductID)
+                            .to(ProductDB::ProductDB, ProductDB::ProductID),
                     )
                     .col(
                         ColumnDef::new(SupermarketPrice::Price)
@@ -163,7 +181,8 @@ enum SupermarketPrice {
     SupermarketPrice,
     Id,
     Timestamp,
-    Supermarket,
+    SupermarketID,
+    ProductID,
     Price,
     OriginalPrice,
     OnSpecial
@@ -190,5 +209,6 @@ enum ProductDB {
     Size,
     Unit,
     Quantity,
-    ImageURL
+    ImageURL,
+    FirstIndexTimestamp
 }
