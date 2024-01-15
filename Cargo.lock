@@ -1138,6 +1138,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "d3-bindings"
+version = "0.1.0"
+dependencies = [
+ "gloo-timers",
+ "js-sys",
+ "leptos",
+]
+
+[[package]]
 name = "darling"
 version = "0.14.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"

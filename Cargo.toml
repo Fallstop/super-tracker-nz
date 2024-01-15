@@ -1,6 +1,6 @@
 [workspace]
 resolver = "2"
-members = ["web-app", "data-scraper"]
+members = ["web-app", "data-scraper", "data-scraper/migrations"]
 
 # Defines a size-optimized profile for the WASM bundle in release mode
 [profile.wasm-release]
