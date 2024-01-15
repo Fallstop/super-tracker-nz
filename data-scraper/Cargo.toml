@@ -5,10 +5,6 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[workspace]
-members = [".", "migration"]
-
-
 [dependencies]
 migration = { path = "migration" } # depends on your needs
 
